@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John R. Holand | Senior Technology Executive</title>
+<meta name="description" content="Engineering executive with 25+ years across healthcare provider, payer, pharmacy and federal health systems. Cloud modernization, interoperability and engineering leadership.">
+<meta property="og:title" content="John R. Holand | Senior Technology Executive">
+<meta property="og:description" content="Transforming complex technology challenges into measurable business results.">
+<meta property="og:image" content="assets/portrait.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23071426'/><text x='50%25' y='58%25' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23fff'>JH</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f8fc;--card:#fff;--fg:#071426;--muted:#4b5b74;--muted-bg:#eef2f8;
+  --primary:#2563eb;--primary-2:#3b82f6;--accent:#e3ecfc;--navy:#0b1930;
+  --border:#0714261a;--radius:14px;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+h2{font-size:clamp(34px,4.6vw,56px);letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--primary)}
+p{margin:0 0 1em}
+.lead{color:var(--muted);font-size:18px;max-width:720px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:#f6f8fccc;border-bottom:1px solid transparent;transition:border-color .2s}
+header.scrolled{border-bottom-color:var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--serif);font-size:24px;text-decoration:none}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:14px;color:var(--muted);font-weight:500}
+.nav ul a:hover{color:var(--fg)}
+.nav .cta{padding:9px 18px;border-radius:999px;background:var(--fg);color:#fff!important}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menu-btn span{display:block;width:20px;height:2px;background:var(--fg);margin:4px 0}
+@media(max-width:900px){
+  .nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--border);padding:8px 24px 16px}
+  .nav ul.open{display:flex}
+  .nav ul li a{display:block;padding:12px 0}
+  .menu-btn{display:block}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 8px 24px -8px #2563eb99}
+.btn-ghost{background:#fff;border-color:var(--border);color:var(--fg)}
+.btn svg{width:16px;height:16px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:72px 0 64px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 30% 30%,#000 20%,transparent 70%);opacity:.55}
+.hero::after{content:"";position:absolute;width:720px;height:720px;right:-200px;top:-260px;background:radial-gradient(circle,#3b82f633,transparent 65%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--border);box-shadow:0 1px 2px #0714260d}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 4px #2563eb22}
+.hero h1{font-size:clamp(44px,6.4vw,84px);margin:28px 0 24px;letter-spacing:-.015em}
+.hero h1 em{display:inline-block;border-bottom:2px solid var(--primary);padding-bottom:4px}
+.hero .lead{font-size:19px;margin-bottom:32px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.portrait{position:relative;background:#fff;border-radius:28px;padding:14px;border:1px solid var(--border);box-shadow:0 40px 80px -40px #07142655}
+.portrait img{border-radius:18px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;background:var(--accent)}
+.portrait .cap{display:flex;justify-content:space-between;align-items:end;padding:16px 8px 6px;gap:12px}
+.portrait .cap strong{font-family:var(--serif);font-size:26px;font-weight:400;display:block}
+.portrait .cap small{color:var(--muted);font-size:14px}
+.loc{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--muted);white-space:nowrap}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.portrait{max-width:440px}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--border);background:#fff;overflow:hidden;padding:18px 0}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:scroll 40s linear infinite}
+.marquee span{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:48px}
+.marquee span::after{content:"◆";color:var(--primary);font-size:8px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* sections */
+section.block{padding:104px 0}
+section.white{background:#fff}
+.sec-head{margin-bottom:56px}
+.sec-head .num{font-family:var(--mono);font-size:12px;color:var(--muted);margin-right:12px}
+.sec-head h2{margin:14px 0 18px;max-width:900px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.metric{background:#fff;padding:32px 28px}
+.metric b{font-family:var(--serif);font-weight:400;font-size:56px;line-height:1;color:var(--fg);display:block}
+.metric h4{margin:14px 0 6px;font-size:16px}
+.metric p{color:var(--muted);font-size:14px;margin:0}
+@media(max-width:800px){.metrics{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.metrics{grid-template-columns:1fr}}
+
+/* profile */
+.profile-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:64px}
+.profile-grid .body p{font-size:17px;color:#24344d}
+.areas{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px;align-self:start;position:sticky;top:96px}
+.areas ul{list-style:none;padding:0;margin:16px 0 0}
+.areas li{padding:11px 0;border-top:1px solid var(--border);font-size:15px;display:flex;gap:12px}
+.areas li::before{content:"→";color:var(--primary)}
+@media(max-width:900px){.profile-grid{grid-template-columns:1fr}.areas{position:static}}
+
+.approach{margin-top:88px}
+.approach h3{font-size:40px;margin-bottom:10px}
+.approach-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:36px}
+.ap{border:1px solid var(--border);border-radius:var(--radius);padding:26px;background:#fff;transition:border-color .2s,box-shadow .2s}
+.ap:hover{border-color:#2563eb55;box-shadow:0 12px 30px -18px #2563eb66}
+.ap .n{font-family:var(--mono);font-size:12px;color:var(--primary)}
+.ap h4{font-size:19px;margin:10px 0 8px;line-height:1.3}
+.ap p{color:var(--muted);font-size:15px;margin:0}
+
+/* expertise */
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}
+.ex{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+.ex .n{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.ex h3{font-size:30px;margin:8px 0 6px}
+.ex p{color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13px;padding:6px 12px;border-radius:999px;background:var(--accent);color:var(--navy);font-weight:500}
+
+/* case studies */
+.cs-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:28px}
+.cs-tab{text-align:left;padding:16px;border-radius:12px;border:1px solid var(--border);background:var(--bg);cursor:pointer;font-family:inherit;color:var(--fg);transition:all .2s}
+.cs-tab .n{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.cs-tab .co{display:block;font-weight:700;font-size:14px;margin:4px 0 2px}
+.cs-tab .t{font-size:13px;color:var(--muted);line-height:1.35}
+.cs-tab[aria-selected=true]{background:var(--fg);color:#fff;border-color:var(--fg)}
+.cs-tab[aria-selected=true] .n,.cs-tab[aria-selected=true] .t{color:#c9d4e6}
+@media(max-width:900px){.cs-tabs{grid-template-columns:1fr 1fr}}
+.cs{border:1px solid var(--border);border-radius:20px;background:#fff;padding:40px;box-shadow:0 30px 60px -40px #07142640}
+.cs-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted)}
+.cs-meta .lbl{color:var(--primary)}
+.cs h3{font-size:clamp(32px,4vw,46px);margin:14px 0 30px}
+.cs-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px}
+.cs-stat{background:var(--bg);border-radius:12px;padding:20px}
+.cs-stat b{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1;display:block}
+.cs-stat span{font-size:13px;color:var(--muted)}
+@media(max-width:800px){.cs-stats{grid-template-columns:1fr 1fr}.cs{padding:24px}}
+.cs-cols{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:800px){.cs-cols{grid-template-columns:1fr}}
+.cs h5{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--primary);margin:0 0 10px;font-weight:500}
+.cs .part{margin-bottom:26px}
+.cs .part p{color:#24344d;font-size:15.5px}
+.cs ul.acts{padding:0;margin:0;list-style:none}
+.cs ul.acts li{padding:10px 0 10px 26px;border-top:1px solid var(--border);position:relative;font-size:15px}
+.cs ul.acts li::before{content:"";position:absolute;left:4px;top:18px;width:8px;height:8px;border-radius:2px;background:var(--primary)}
+.impact{background:var(--navy);color:#e8eef8;border-radius:14px;padding:22px 24px;margin-top:6px}
+.impact h5{color:#93b4f5}
+.impact p{margin:0}
+.cs-nav{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}
+
+/* experience */
+.roles{border-top:1px solid var(--border)}
+.role{border-bottom:1px solid var(--border)}
+.role button{width:100%;display:grid;grid-template-columns:170px 1fr auto;gap:24px;align-items:center;padding:24px 4px;background:none;border:0;text-align:left;cursor:pointer;font-family:inherit;color:inherit}
+.role .when{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.role .co{font-family:var(--serif);font-size:28px;line-height:1.1}
+.role .ti{display:block;font-size:15px;color:var(--muted);margin-top:4px}
+.role .where{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:16px}
+.role .chev{width:30px;height:30px;border-radius:50%;border:1px solid var(--border);display:grid;place-items:center;transition:transform .25s,background .2s}
+.role.open .chev{transform:rotate(45deg);background:var(--fg);color:#fff;border-color:var(--fg)}
+.role .detail{display:none;padding:0 4px 28px 194px}
+.role.open .detail{display:block}
+.role .detail p{color:#24344d;max-width:760px}
+.role .detail ul{margin:0;padding-left:20px;max-width:760px}
+.role .detail li{margin:6px 0;color:#24344d}
+@media(max-width:800px){
+  .role button{grid-template-columns:1fr auto}.role .when{grid-column:1/-1}
+  .role .where span{display:none}.role .detail{padding-left:4px}
+}
+
+/* mentorship */
+.mentor-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:18px}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+.card.edu{background:var(--navy);color:#e8eef8;border-color:var(--navy)}
+.card.edu .eyebrow{color:#93b4f5}
+.card.edu h3{font-size:30px;margin:14px 0 8px;color:#fff}
+.card.edu p{color:#b8c6dd;margin:0}
+.card b{font-family:var(--serif);font-weight:400;font-size:56px;line-height:1;display:block}
+.card h4{margin:12px 0 6px;font-size:16px}
+.card p{color:var(--muted);font-size:15px;margin:0}
+@media(max-width:1000px){.mentor-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.mentor-grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px}
+.contact-list{margin:28px 0;display:grid;gap:2px}
+.contact-list a,.contact-list div{display:flex;flex-direction:column;padding:16px 0;border-top:1px solid var(--border);text-decoration:none}
+.contact-list small{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted)}
+.contact-list span{font-size:18px;font-weight:500}
+.contact-list a:hover span{color:var(--primary)}
+form{background:#fff;border:1px solid var(--border);border-radius:20px;padding:32px;display:grid;gap:18px;box-shadow:0 30px 60px -40px #07142640}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:600px){.row2{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:13px;font-weight:600}
+label em{font-style:normal;font-weight:400;color:var(--muted)}
+input,textarea{font:inherit;font-size:15px;padding:12px 14px;border-radius:10px;border:1px solid #07142629;background:var(--bg);color:var(--fg)}
+input:focus,textarea:focus{outline:2px solid var(--primary-2);outline-offset:1px;background:#fff}
+textarea{min-height:140px;resize:vertical}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+
+footer{padding:36px 0;border-top:1px solid var(--border);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top">John R. Holand</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" id="menuBtn"><span></span><span></span><span></span></button>
+    <ul id="menu">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#case-studies">Achievements</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#mentorship">Mentorship</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill eyebrow">Senior Technology Executive</span>
+      <h1>Transforming Complex Technology Challenges Into <em>Measurable Business Results.</em></h1>
+      <p class="lead">With more than 25 years of experience across healthcare technology, federal health systems and enterprise engineering, I lead technology transformation that connects engineering excellence with business performance.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#experience">Explore My Experience
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7l10 10M17 7v10H7"/></svg></a>
+        <a class="btn btn-ghost" href="assets/John_Holand_Resume.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>Download Executive Resume</a>
+      </div>
+    </div>
+    <figure class="portrait" style="margin:0">
+      <img src="assets/portrait.jpg" alt="Portrait of John R. Holand" width="1000" height="1000">
+      <figcaption class="cap">
+        <div><strong>John R. Holand</strong><small>Engineering &amp; Technology Leadership</small></div>
+        <span class="loc">CORCORAN, MN</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- METRICS -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Documented Executive Impact</span>
+      <p class="lead" style="margin-top:14px">Results drawn from recent leadership roles at MMIT and Fullbay, and a career spanning provider, payer, pharmacy and federal health.</p>
+    </div>
+    <div class="metrics reveal" id="metrics"></div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="block white" id="profile">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="num">01</span>Executive Profile</span>
+      <h2>Leadership Built on Technology, Transformation and <em>Business Impact.</em></h2>
+    </div>
+    <div class="profile-grid">
+      <div class="body reveal">
+        <p>I'm an engineering executive with more than 25 years of experience building and scaling technology organizations across healthcare provider, payer, pharmacy and federal health systems. My work spans EHR integration, healthcare IoT, telehealth, pharmacy and payer analytics, and VA/DoD federal health platforms.</p>
+        <p>I've worked across the full evolution of healthcare data standards: from HL7 v2/v3 on the AHLTA military EHR program at Northrop Grumman, through veterans health data exchange at Accenture Federal Services and Optum, to SMART on FHIR EHR launch workflows at Sonifi Health. I engage product, clinical and operational stakeholders on FHIR resource modeling, clinical workflow integration and the regulatory implications of interoperability decisions.</p>
+        <p>I've inherited four consecutive underperforming engineering organizations, diagnosed root causes, restructured for accountability and rebuilt delivery culture. I've scaled teams from 10 to more than 70 engineers across onshore and offshore (India) locations, managed budgets up to $5.7M, and partnered directly with CTOs and CPOs on architecture roadmaps and product strategy.</p>
+        <p>Career-long HIPAA, SOC 2, FISMA and HITRUST experience means I treat regulatory constraints as a first-class engineering concern. My current focus is AI-enabled SDLC governance, engineering efficiency at scale and agentic workflow tooling in regulated environments, connecting technology strategy directly to measurable business outcomes.</p>
+      </div>
+      <aside class="areas reveal">
+        <span class="eyebrow">Areas of Leadership</span>
+        <ul id="areas"></ul>
+      </aside>
+    </div>
+
+    <div class="approach">
+      <div class="reveal">
+        <h3>Executive Leadership Approach</h3>
+        <p class="lead">The themes that define how I lead, drawn from more than two decades of building and transforming engineering organizations.</p>
+      </div>
+      <div class="approach-list" id="approach"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="block" id="expertise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="num">02</span>Executive Expertise</span>
+      <h2>Deep domain knowledge, applied at <em>enterprise scale.</em></h2>
+      <p class="lead">The seven disciplines I bring, spanning the clinical, regulatory, architectural and organizational realities of healthcare technology leadership.</p>
+    </div>
+    <div class="exp-grid" id="expGrid"></div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="block white" id="case-studies">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="num">03</span>Selected Executive Achievements</span>
+      <h2>Five case studies in transformation and <em>measurable impact.</em></h2>
+      <p class="lead">How I've led cloud modernization, enterprise analytics, organizational turnarounds and federal health platforms.</p>
+    </div>
+    <div class="cs-tabs" role="tablist" id="csTabs"></div>
+    <article class="cs" id="cs" role="tabpanel" aria-live="polite"></article>
+    <div class="cs-nav">
+      <button class="btn btn-ghost" id="csPrev">← Previous</button>
+      <button class="btn btn-ghost" id="csNext">Next →</button>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="num">04</span>Professional Experience</span>
+      <h2>Three decades across healthcare, federal and <em>enterprise technology.</em></h2>
+      <p class="lead">Select any role to see my responsibilities and achievements.</p>
+    </div>
+    <div class="roles" id="roles"></div>
+  </div>
+</section>
+
+<!-- MENTORSHIP -->
+<section class="block white" id="mentorship">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="num">05</span>Education &amp; Mentorship</span>
+      <h2>Investing in the next generation of <em>engineers.</em></h2>
+      <p class="lead">I've spent more than sixteen years mentoring in competitive robotics, grounded in my foundation in computer science and mathematics.</p>
+    </div>
+    <div class="mentor-grid">
+      <div class="card edu reveal">
+        <span class="eyebrow">Education</span>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>Minor in Mathematics<br>University of North Dakota<br>Grand Forks, North Dakota</p>
+      </div>
+      <div class="card reveal"><b>16+</b><h4>Years as a FIRST Robotics (FRC) mentor</h4><p>I develop and coach the next generation of engineers through competitive robotics.</p></div>
+      <div class="card reveal"><b>4</b><h4>World Championship qualifications in 9 years</h4><p>Consecutive qualifications I've earned alongside student engineering teams.</p></div>
+      <div class="card reveal"><b>Pilot</b><h4>1,500 hour IR rated Private Pilot</h4><p>A lifelong interest of mine: aviation technology and the discipline of flight.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow"><span class="num">06</span>Contact</span>
+      <h2 style="margin:14px 0 18px">Let's Connect on the Next <em>Technology Challenge.</em></h2>
+      <p class="lead">For executive opportunities, technology leadership conversations and professional connections, I welcome thoughtful conversations with organizations building and transforming complex technology platforms.</p>
+      <div class="contact-list">
+        <a href="mailto:jrholand@gmail.com"><small>EMAIL</small><span>jrholand@gmail.com</span></a>
+        <a href="tel:+12186880064"><small>PHONE</small><span>218-688-0064</span></a>
+        <div><small>LOCATION</small><span>Corcoran, Minnesota</span></div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:jrholand@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/johnholand/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="assets/John_Holand_Resume.pdf" download>Download Resume</a>
+        <a class="btn btn-ghost" href="assets/John_Holand_Executive_Summary.pdf" download>Executive Summary</a>
+      </div>
+    </div>
+    <!-- Static form: opens the visitor's email client. To use a form service instead
+         (Formspree, Netlify Forms, etc.), set action/method and remove the submit handler below. -->
+    <form id="contactForm" class="reveal">
+      <div class="row2">
+        <label>Full Name<input name="name" required autocomplete="name"></label>
+        <label>Email Address<input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <div class="row2">
+        <label>Organization <em>(optional)</em><input name="org" autocomplete="organization"></label>
+        <label>Subject<input name="subject" required></label>
+      </div>
+      <label>Message<textarea name="message" required></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">Send Message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> John R. Holand</span>
+    <span>Corcoran, Minnesota · <a href="https://www.linkedin.com/in/johnholand/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const MARQUEE=["HEALTHCARE TECHNOLOGY","PHARMACY & PAYER SYSTEMS","FEDERAL HEALTH","CLOUD MODERNIZATION","AI-ENABLED ENGINEERING","ENTERPRISE ARCHITECTURE","ROBOTICS","AVIATION TECHNOLOGY"];
+
+const METRICS=[
+ ["25+","Years of Experience","Provider, payer, pharmacy and federal health systems"],
+ ["$1.6M","Annual Savings","Azure cloud-native transformation at MMIT"],
+ ["99.9%","Platform Uptime","Improved from 80% with zero downtime during migration"],
+ ["4 mo.","Delivery Acceleration","Alpha release brought forward at Fullbay"],
+ ["<3 hrs","Regression Testing","Reduced from 3–5 days through automated testing"],
+ ["70+","Engineering Professionals Scaled","Teams grown from 10, onshore and offshore (India)"]
+];
+
+const AREAS=["Enterprise engineering leadership","Healthcare interoperability","Pharmacy and payer analytics","Federal healthcare platforms","Cloud modernization","Healthcare IoT","Engineering organization transformation","AI-enabled software development","Enterprise architecture","Regulatory and security compliance"];
+
+const APPROACH=[
+ ["Building accountable engineering organizations","I put clear accountability frameworks, career development paths and escalation structures in place so teams own their outcomes."],
+ ["Aligning engineering priorities with business strategy","I co-own roadmaps with product and technology leadership so commitments are technically grounded and delivery-ready."],
+ ["Transforming underperforming delivery organizations","I diagnose root causes, restructure for accountability and rebuild delivery culture. I've done it across four consecutive turnarounds."],
+ ["Establishing engineering governance and operational discipline","I surface engineering KPIs, DORA metrics and SLO tracking to executive leadership as leading indicators of delivery health."],
+ ["Developing engineering managers and high-performing teams","I build career ladders, sprint cadence and manager development that have sustained near-zero attrition."],
+ ["Using automation and AI to improve engineering efficiency","I adopt AI-enabled SDLC practices and automated quality pipelines, governed for regulated environments."],
+ ["Embedding security and compliance into enterprise architecture","I design HIPAA, SOC 2, FISMA and HITRUST requirements into systems from the start, not added afterwards."]
+];
+
+const EXPERTISE=[
+ ["Healthcare Technology","Provider, payer, pharmacy and federal health domains.",["EHR Integration","Healthcare IoT","Telehealth","Provider Systems","Payer Platforms","Pharmacy Benefit Management","Veterans' Healthcare"]],
+ ["Healthcare Interoperability","Standards-based clinical data exchange.",["FHIR R4","SMART on FHIR","HL7 v2/v3","CDA","OAuth 2.0","Clinical Data Exchange"]],
+ ["Technology Leadership","Organizations built to deliver.",["Engineering Organization Transformation","Team Building","Product and Engineering Partnership","Agile Transformation","DORA Metrics","Engineering KPIs","Budget Management"]],
+ ["Cloud and Architecture","Cloud-native platforms at enterprise scale.",["AWS","Microsoft Azure","Microservices","Event-Driven Architecture","Kubernetes","Docker","CI/CD/CT"]],
+ ["AI and Automation","Governed AI across the software lifecycle.",["AI-Enabled SDLC","Claude Code","AI-Powered Testing","Agentic Workflow Tooling","AI Governance","Engineering Automation"]],
+ ["Security and Compliance","Regulation as a first-class engineering concern.",["HIPAA","HITECH","SOC 2","FISMA Moderate","HITRUST","FedRAMP","DoD Standards","Accessibility (508/WCAG)"]],
+ ["Data and Analytics","Platforms that turn claims data into insight.",["Snowflake","Databricks","SQL","NoSQL","REST APIs","ETL Pipelines","Pharmacy Claims Data","Analytics Platforms"]]
+];
+
+const CASES=[
+ {co:"MMIT",role:"Director of Engineering",when:"May 2023 – Jul 2025",title:"Enterprise Cloud Transformation",
+  stats:[["$1.6M","Annual savings"],["99.9%","Uptime, up from 80%"],["14 mo.","Delivered vs. 24-month plan"],["Zero","Downtime during migration"]],
+  context:"MMIT provides pharmacy and payer analytics to pharmaceutical and payer enterprises. I held full engineering and product leadership for its platforms, with 50 developers across onshore and offshore (India) teams and a $5M staff budget plus cloud infrastructure.",
+  challenge:"Core .NET applications ran on-premises with 80% uptime. The original modernization plan called for 24 months, and the business needed a credible case before committing budget.",
+  tech:["Microsoft Azure","App Services","AKS","Azure Functions","Azure DevOps",".NET"],
+  actions:["Partnered with the CTO on the architecture modernization roadmap.","Presented the cloud transformation business case to executive leadership with ROI modeling that secured program approval and budget.","Architected and led the migration of .NET on-premises applications to Azure cloud-native infrastructure.","Implemented DORA metrics and SLO tracking to give executive leadership visibility into delivery health."],
+  impact:"A modernization delivered ten months ahead of plan that cut operating cost, made the platform dependable for enterprise clients and gave leadership measurable reliability indicators."},
+ {co:"MMIT",role:"Director of Engineering",when:"May 2023 – Jul 2025",title:"Enterprise Pharmacy and Payer Analytics",
+  stats:[["7","REST microservice applications"],["~3TB","Pharmacy claims data processed"],["500+","Pharmaceutical and payer clients"],["90%+","Regression cycle reduction"]],
+  context:"MMIT's clients rely on pharmacy claims intelligence for market access, formulary intelligence and channel analytics decisions.",
+  challenge:"Deliver a robust analytics platform at enterprise scale while growing an offshore engineering team from a nascent state to fully operational.",
+  tech:["ASP.NET","Node.js","React","REST Microservices","Pharmacy Claims Data","Claude Code"],
+  actions:["Delivered seven REST microservice applications powering a robust data analytics solution.","Scaled the India offshore team with career ladders, sprint cadence, escalation paths and manager development.","Led three development managers across a 50-person engineering organization.","Deployed Claude Code as a production engineering standard with a three-layer governance and attestation model covering PHI exposure, architecture conformance and data handling at the CI gate."],
+  impact:"An enterprise data platform supporting hundreds of pharmaceutical and payer clients, delivered by a scaled team that sustained near-zero attrition across two years."},
+ {co:"Fullbay",role:"Director of Engineering",when:"Aug 2025 – Jan 2026",title:"Engineering Organization Turnaround and Product Acceleration",
+  stats:[["60 days","To stabilize the organization"],["4 mo.","Alpha release accelerated"],["<3 hrs","Regression, down from 3–5 days"],["50%+","Stripe transaction fee reduction"]],
+  context:"A greenfield cloud-native SaaS platform launch led by 30 developers (15 onshore, 15 offshore) and two engineering managers.",
+  challenge:"The engineering organization faced systemic team dysfunction while the business needed a reliable path to its Alpha release.",
+  tech:["AWS EventBridge","Snowflake","Stripe","AI-Powered Testing","Automated Testing"],
+  actions:["Diagnosed and resolved systemic team dysfunction within 60 days, establishing accountability frameworks and career development paths.","Co-owned the product roadmap with the CPO, embedding engineering leadership into prioritization cycles.","Drove Agile transformation and AI-powered tooling, and implemented an automated testing framework.","Designed an AWS EventBridge analytics platform with Snowflake and led two payment processing teams."],
+  impact:"A stabilized organization with near-zero attrition reported, a faster path to market, and payment-processing improvements with direct commercial value."},
+ {co:"Sonifi Health",role:"Director of Engineering",when:"Aug 2021 – Aug 2022",title:"Healthcare Interoperability and IoT Innovation",
+  stats:[["5","HIPAA-compliant IoT solutions"],["SMART","on FHIR EHR launch workflows"],["Nationwide","Hospital deployments"],["Cloud-native","AWS modernization"]],
+  context:"Sonifi Health delivers HIPAA-compliant healthcare IoT solutions to hospital systems nationwide. I led architecture and modernization with 20 developers, 7 testers and a $3.6M staff budget.",
+  challenge:"Monolithic Python and Java systems and immature engineering practices in a resource-constrained, fast-growing environment.",
+  tech:["SMART on FHIR","FHIR R4","HL7","AWS Lambda","React","MongoDB","CI/CD/CT"],
+  actions:["Led the SMART on FHIR implementation for EHR-launched patient room workflows, pulling Appointment and Schedule resources from hospital EHRs.","Delivered five HIPAA-compliant IoT patient-room solutions with HL7-integrated clinical workflows.","Migrated monolithic Python/Java to cloud-native AWS Lambda, React and MongoDB with a full CI/CD/CT pipeline.","Rebuilt HIPAA-compliant engineering practices and drove a Blue/Green deployment strategy."],
+  impact:"Personalized in-room patient engagement, education and care team coordination driven by live EHR data, on a modern, compliant platform."},
+ {co:"Optum (UnitedHealth Group)",role:"Development Manager",when:"Oct 2016 – Feb 2019",title:"Federal Healthcare Technology and Veterans' Health Platforms",
+  stats:[["40","Person engineering team"],["VACCN","Serving veterans nationwide"],["SOC 2","Compliant platform"],["FISMA","Moderate secure cloud"]],
+  context:"Engineering leadership for large-scale federal health and veterans benefits platforms, leading a 40-person team.",
+  challenge:"Build mission-critical platforms for veterans seeking care outside VA systems under strict federal security and compliance requirements.",
+  tech:["FHIR","Microservices","CI/CD/CT","FISMA Moderate Cloud","SOC 2"],
+  actions:["Built the SOC 2-compliant Veterans Automated Case Coordination Network (VACCN) on a FISMA Moderate secure cloud.","Implemented FHIR-based interoperability for veterans health data exchange between the VA, community providers and care coordination platforms.","Architected two large-scale benefits administration platforms with payor/payee capabilities.","Partnered with federal program stakeholders on compliance and delivery milestones."],
+  impact:"Mission-critical infrastructure coordinating care for all veterans seeking care outside VA systems, built to federal security standards."}
+];
+
+const ROLES=[
+ {when:"Aug 2025 – Jan 2026",co:"Fullbay",title:"Director of Engineering",loc:"Phoenix, AZ",
+  sum:"Greenfield cloud-native SaaS platform launch and team turnaround. 30 developers (15 onshore, 15 offshore), 2 engineering managers.",
+  pts:["Created and released a dynamic data analytics and reporting solution.","Resolved systemic team dysfunction within 60 days: stabilized delivery, eliminated attrition and established accountability frameworks.","Co-owned the product roadmap with the CPO.","Accelerated the Alpha release by 4 months; cut regression cycles from 3–5 days to under 3 hours.","Designed an AWS EventBridge analytics platform with Snowflake; led 2 payment teams reducing Stripe fees by 50%+."]},
+ {when:"May 2023 – Jul 2025",co:"MMIT",title:"Director of Engineering",loc:"Yardley, PA",
+  sum:"Full engineering and product leadership for pharmacy and payer analytics platforms. 50 developers (20 onshore, 30 offshore India), 3 dev managers, $5M staff budget plus cloud infrastructure.",
+  pts:["Delivered 7 REST microservice applications processing 3TB of pharmacy claims for 500+ enterprise clients.","Led a 14-month Azure cloud-native migration: zero downtime, $1.6M annual savings, uptime 80% to 99.9%.","Deployed Claude Code as a production standard with a three-layer governance and attestation model.","Established engineering KPIs and a DORA metrics framework for executive visibility.","Scaled the India offshore team to fully operational with near-zero attrition across 2 years."]},
+ {when:"Aug 2021 – Aug 2022",co:"Sonifi Health",title:"Director of Engineering",loc:"Sioux Falls, SD",
+  sum:"Architecture and modernization for HIPAA-compliant healthcare IoT solutions serving hospital systems nationwide. 20 developers, 7 testers, $3.6M staff budget.",
+  pts:["Led SMART on FHIR implementation for EHR-launched patient room workflows.","Delivered 5 HIPAA-compliant IoT patient room solutions with HL7-integrated clinical workflows.","Migrated monolithic Python/Java to AWS Lambda, React and MongoDB with full CI/CD/CT.","Rebuilt HIPAA-compliant engineering practices and drove a Blue/Green deployment strategy."]},
+ {when:"Mar 2019 – Aug 2021",co:"Data Recognition Corporation",title:"Director of Engineering",loc:"Maple Grove, MN",
+  sum:"Engineering leadership for large-scale assessment platforms. Full CI/CD/CT transformation and team modernization.",
+  pts:["Architected enterprise-wide zero-downtime Blue/Green deployment and full CI/CD/CT pipeline for AWS.","Migrated .NET/Java to cloud-native Node.js/Angular microservices.","Transformed waterfall delivery teams into high-performing Agile organizations.","Resolved critical customer contract issues through targeted restructuring and process redesign."]},
+ {when:"Oct 2016 – Feb 2019",co:"Optum (UnitedHealth Group)",title:"Development Manager",loc:"Eden Prairie, MN",
+  sum:"Engineering leadership for large-scale federal health and veterans benefits platforms. 40-person team.",
+  pts:["Built the SOC 2-compliant VACCN on a FISMA Moderate secure cloud with full CI/CD/CT microservices.","Implemented FHIR-based veterans health data exchange between VA, community providers and care coordination platforms.","Architected 2 large-scale benefits administration platforms with payor/payee capabilities."]},
+ {when:"Feb 2016 – Oct 2016",co:"Ellumen Technologies",title:"Enterprise Solution Architect",loc:"Chantilly, VA",
+  sum:"Engineering and process improvement to obtain a DoD development contract.",
+  pts:["Led processes to implement Agile methodologies within the company.","Provided technical enhancements that assisted with government contract acquisition.","Improved process and quality through architectural consulting on existing projects.","Oversaw Agile development and application architecture from inception to delivery."]},
+ {when:"Apr 2009 – Jan 2016",co:"Accenture Federal Services",title:"Senior Software Engineer / Architect",loc:"Chantilly, VA",
+  sum:"Seven years of engineering leadership across federal health and defense programs, including DoD, civilian health agency and VA engagements.",
+  pts:["Contributed to early FHIR-based interoperability work on VA health data exchange programs.","Led technical delivery across federal engagements: FISMA compliance, secure cloud deployment and federal SDLC standards.","Led technology due diligence on the Agilex acquisition by Accenture; contributed to business capture and proposals."]},
+ {when:"Apr 2005 – Mar 2009",co:"Northrop Grumman",title:"Senior Software Engineer / Architect",loc:"Chantilly, VA",
+  sum:"Defense and intelligence systems for Military Health Care.",
+  pts:["HL7 v2/v3 interoperability work on the AHLTA military EHR program."]},
+ {when:"May 1999 – Mar 2005",co:"Altru Health Systems",title:"EPIC System Integration Engineer / PM",loc:"Grand Forks, ND",
+  sum:"Early HIPAA compliance pioneer and Epic clinical workflows.",
+  pts:["EPIC system integration and project management for Epic clinical workflows.","Early HIPAA compliance pioneer."]},
+ {when:"1993 – 1998",co:"Intermountain Health Care",title:"Senior Software Engineer",loc:"",
+  sum:"Clinical systems engineering for a leading health system.",
+  pts:["Real-time IV pump telemetry.","Multi-system remote radiology PACS architecture.","Online physician ordering."]}
+];
+
+const pad=n=>String(n).padStart(2,'0');
+const $=id=>document.getElementById(id);
+
+// marquee (duplicated for seamless loop)
+$('marquee').innerHTML=[...MARQUEE,...MARQUEE].map(t=>`<span>${esc(t)}</span>`).join('');
+$('metrics').innerHTML=METRICS.map(([v,h,p])=>`<div class="metric"><b>${esc(v)}</b><h4>${esc(h)}</h4><p>${esc(p)}</p></div>`).join('');
+$('areas').innerHTML=AREAS.map(a=>`<li>${esc(a)}</li>`).join('');
+$('approach').innerHTML=APPROACH.map(([h,p],i)=>`<div class="ap reveal"><span class="n">${pad(i+1)}</span><h4>${esc(h)}</h4><p>${esc(p)}</p></div>`).join('');
+$('expGrid').innerHTML=EXPERTISE.map(([h,p,t],i)=>`<div class="ex reveal"><span class="n">${pad(i+1)}</span><h3>${esc(h)}</h3><p>${esc(p)}</p><div class="tags">${t.map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div></div>`).join('');
+
+// case studies
+let cur=0;
+$('csTabs').innerHTML=CASES.map((c,i)=>`<button class="cs-tab" role="tab" data-i="${i}"><span class="n">${pad(i+1)}</span><span class="co">${esc(c.co)}</span><span class="t">${esc(c.title)}</span></button>`).join('');
+function showCase(i){
+  cur=(i+CASES.length)%CASES.length; const c=CASES[cur];
+  document.querySelectorAll('.cs-tab').forEach((b,j)=>b.setAttribute('aria-selected',j===cur));
+  $('cs').innerHTML=`
+    <div class="cs-meta"><span class="lbl">CASE STUDY ${pad(cur+1)}</span><span>${esc(c.co.toUpperCase())}</span><span>${esc(c.role.toUpperCase())}</span><span>${esc(c.when.toUpperCase())}</span></div>
+    <h3>${esc(c.title)}</h3>
+    <div class="cs-stats">${c.stats.map(([v,l])=>`<div class="cs-stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join('')}</div>
+    <div class="cs-cols">
+      <div>
+        <div class="part"><h5>BUSINESS CONTEXT</h5><p>${esc(c.context)}</p></div>
+        <div class="part"><h5>CHALLENGE</h5><p>${esc(c.challenge)}</p></div>
+        <div class="part"><h5>TECHNOLOGIES AND SYSTEMS</h5><div class="tags">${c.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>
+      </div>
+      <div>
+        <div class="part"><h5>LEADERSHIP ACTIONS</h5><ul class="acts">${c.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
+        <div class="impact"><h5>BUSINESS IMPACT</h5><p>${esc(c.impact)}</p></div>
+      </div>
+    </div>`;
+}
+$('csTabs').addEventListener('click',e=>{const b=e.target.closest('.cs-tab');if(b)showCase(+b.dataset.i)});
+$('csPrev').onclick=()=>showCase(cur-1);
+$('csNext').onclick=()=>showCase(cur+1);
+showCase(0);
+
+// experience accordion
+$('roles').innerHTML=ROLES.map((r,i)=>`
+  <div class="role${i===0?' open':''}">
+    <button aria-expanded="${i===0}">
+      <span class="when">${esc(r.when)}</span>
+      <span><span class="co">${esc(r.co)}</span><span class="ti">${esc(r.title)}</span></span>
+      <span class="where"><span>${esc(r.loc)}</span><span class="chev" aria-hidden="true">+</span></span>
+    </button>
+    <div class="detail"><p>${esc(r.sum)}</p><ul>${r.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div>
+  </div>`).join('');
+$('roles').addEventListener('click',e=>{
+  const btn=e.target.closest('.role > button'); if(!btn) return;
+  const role=btn.parentElement, open=!role.classList.contains('open');
+  document.querySelectorAll('.role').forEach(r=>{r.classList.remove('open');r.firstElementChild.setAttribute('aria-expanded','false')});
+  if(open){role.classList.add('open');btn.setAttribute('aria-expanded','true')}
+});
+
+// contact form -> mailto
+$('contactForm').addEventListener('submit',e=>{
+  e.preventDefault(); const f=new FormData(e.target);
+  const body=`${f.get('message')}\n\n— ${f.get('name')}${f.get('org')?', '+f.get('org'):''}\n${f.get('email')}`;
+  location.href=`mailto:jrholand@gmail.com?subject=${encodeURIComponent(f.get('subject'))}&body=${encodeURIComponent(body)}`;
+});
+
+// header, mobile menu, reveal, year
+const hdr=$('hdr'); addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true});
+$('menuBtn').onclick=function(){const o=$('menu').classList.toggle('open');this.setAttribute('aria-expanded',o)};
+$('menu').addEventListener('click',e=>{if(e.target.tagName==='A'){$('menu').classList.remove('open')}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+$('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
